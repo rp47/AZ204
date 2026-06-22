@@ -5,4 +5,4 @@ app.get('/',(req,res)=>{
     res.send('Hello from 204');
 });
 app.get('/health',(req,res)=> res.json({status:"ok",time : new Date().toISOString()}));
-app.listen(port,()=>console.log(`listening on port ${port}`));
+app.listen(port,()=>console.log(`listening on ports ${port}`));
